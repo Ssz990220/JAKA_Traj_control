@@ -171,3 +171,21 @@
 15-09-2021 16:24:31 root:INFO:Input is 
 15-09-2021 16:24:31 root:INFO:Message sent: <flag><"">
 15-09-2021 16:24:31 root:INFO:waiting for connection...
+15-09-2021 16:31:53 root:INFO:waiting for connection...
+15-09-2021 16:31:54 root:INFO:conneted form: 10.5.5.100
+15-09-2021 16:31:56 root:INFO:Input is b
+15-09-2021 16:31:56 root:INFO:Message sent: <flag><"b">
+15-09-2021 16:31:56 root:INFO:Data received is :1102.211, 80.9607, 93.0844, 143.346, -90.35, 52.5695
+15-09-2021 16:32:22 root:INFO:waiting for connection...
+15-09-2021 16:32:24 root:INFO:conneted form: 10.5.5.100
+15-09-2021 16:32:26 root:INFO:Input is b
+15-09-2021 16:32:26 root:INFO:Message sent: <flag><"b">
+15-09-2021 16:32:50 root:INFO:waiting for connection...
+15-09-2021 16:32:52 root:INFO:conneted form: 10.5.5.100
+15-09-2021 16:32:53 root:INFO:Input is b
+15-09-2021 16:32:53 root:INFO:Message sent: <flag><"b">
+15-09-2021 16:32:53 root:INFO:Data received is :1103.211, 81.9607, 94.0844, 144.346, -89.35, 53.5695
+15-09-2021 16:33:47 root:INFO:waiting for connection...
+15-09-2021 16:33:50 root:INFO:conneted form: 10.5.5.100
+15-09-2021 16:33:52 root:INFO:Input is b
+15-09-2021 16:33:52 root:INFO:Message sent: <flag><"b">
