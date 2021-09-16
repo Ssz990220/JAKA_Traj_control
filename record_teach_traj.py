@@ -6,7 +6,7 @@ from datetime import datetime
 ## Parameter
 serverName = '10.5.5.100'
 serverPort = 10000
-BUFSIZ = 4096
+BUFSIZ = 4096  # Larger than 3500
 ADDR = (serverName,serverPort)
 DT = datetime.now()
 DT_format = DT.strftime('%Y%m%d%H%M%S')

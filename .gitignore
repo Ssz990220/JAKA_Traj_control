@@ -1,3 +1,4 @@
 /log
 /traj
 *.log
+/__pycache__
