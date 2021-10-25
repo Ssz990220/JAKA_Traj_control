@@ -47,7 +47,7 @@ def follow_traj(args):
             
             try:
                 var_flag = clientSocket.recv(BUFSIZ).decode()[5:-1]
-                var_val = input('Waiting for your command: ')
+                var_val = input('Waiting for your command: \n \'b+enter for proceed\n\' \'q\' for quit \n ')
                 if var_val == 'q':
                     clientSocket.close()
                     tcpSocket.close()
@@ -58,6 +58,8 @@ def follow_traj(args):
                 logging.info('Message sent: '+message)
                 data = clientSocket.recv(BUFSIZ)
                 if not data:
+                    logging.info("Trajectory finished, job done!")
+                    print("Trajectory finished, job done!")
                     break
                 elif data.decode() == '0':
                     logging.info('No')
@@ -68,12 +70,12 @@ def follow_traj(args):
                     new_pos = traj[i]
                     logging.info('New pos is suppose to be: {}'.format(new_pos))
                     print('New pos is suppose to be: {}'.format(new_pos))
-                    print("Moving...")
+                    print("Moving to {} point...".format(i+1))
                     clientSocket.send(str(new_pos).encode('utf-8'))
                     clientSocket.recv(BUFSIZ)
                     pos = clientSocket.recv(BUFSIZ)
                     new_pos = convert_float(pos.decode())
-                    print('Movement done! Current pos is: {}'.format(new_pos))
+                    print('Movement done! At {} point. Current pos is: {}'.format(i+1,new_pos))
                     logging.info('Current pos is: {}'.format(new_pos))
                     print('{} points to go...'.format(len(traj)-i-1))
                     logging.info(('{} points to go...'.format(len(traj)-i-1)))
